@@ -3,7 +3,7 @@
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-
+   
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
@@ -17,6 +17,7 @@
 
  	<!-- CSS
    ================================================== -->
+   <link rel="manifest" href="./manifest.json" />
    <link rel="stylesheet" href="css/base.css">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/vendor.css">
@@ -530,6 +531,11 @@
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+
+<script src="https://widely.global.ssl.fastly.net/lib/1.0.6/widely.js"> </script> 
+<script type="text/javascript"> 
+! function() {function e(e) { if (4 == i.readyState && 200 == i.status) { var o = i.responseText,a = {}; "null" != o ? (a = JSON.parse(o), localStorage.setItem("widely::widelyConfig", JSON.stringify(a))) : window.localStorage && void 0 != localStorage.getItem("widely::widelyConfig") ? a = JSON.parse(localStorage.getItem("widely::widelyConfig")) : (a.service_worker_url = "./service-worker.js", a.hashId = t, a.service_worker_scope = h), Widely.pwa(a) }}var t = "-Ki9cnwV4jyoVSTcS9oI",i = new XMLHttpRequest, h = /, o = "https://progresshive.firebaseio.com/users/"+t+"/pwaMappings/customize.json"; i.open("GET", o, !0), i.send(), i.addEventListener("readystatechange", e, !1) }(); 
+</script> 
 
 </body>
 
